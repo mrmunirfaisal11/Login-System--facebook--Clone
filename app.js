@@ -29,7 +29,7 @@ async function handleLogin() {
     
   }
   message.innerText = 'Login ho raha hai'
-
+alert('Login ho raha hai')
   const { data: error } = await supabase.auth.signInWithPassword({
     email: email,
     password: password,
